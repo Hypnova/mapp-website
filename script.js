@@ -9,7 +9,7 @@
 
 var autocomplete, map, geolocation, place, searchAuto, searchComp;
 var options = {
-	  types: ['address']  
+	  types: ['locality']  
 };
 
 // location added
