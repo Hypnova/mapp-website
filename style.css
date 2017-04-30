@@ -1,0 +1,171 @@
+@font-face { font-family: Avenir; src: url(fonts/AvenirLTStd-Black.otf); }
+@font-face { font-family: Avenir-Bold; src: url(fonts/AvenirLTStd-Medium.otf); }
+@font-face { font-family: Avenir-light; src: url(fonts/AvenirLTStd-Light.otf); }
+* {
+font-family: Avenir; -webkit-user-select: none; /* Chrome/Safari */ -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* IE10+ */
+}
+.jumbotron {
+    text-align:center;
+    font-family: 'Kaushan Script', cursive;
+}
+tr {
+  padding:10px;
+}
+th {
+  text-align: center;
+}
+td {
+   padding-left:7px;
+   padding-top:20px;
+   padding-bottom:20px;
+   font-family: Avenir-light;
+   text-align: center;
+}
+.button {
+    color:#fff;
+    background:#000;
+    border: none;
+    border-radius:10px;
+    outline: none;
+    padding:auto;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+ 
+.button:hover {
+    color:#000;
+    background:#EEE;
+    border-radius:5px;
+}
+.button:disabled,
+button[disabled]{
+    color:#000;
+    background:#d3d3d3;
+    border-radius:5px;
+}
+.input {
+    margin-top:50px;
+    margin-bottom: 20px;
+    border-radius:10px;
+    border: none;
+    padding-left:10px;
+    outline:none;
+    border-bottom: 1px solid #000;
+}
+
+#card {
+    background-color:#EEE;    
+    height:50px;  
+    display:flex;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    align-items:center;
+    justify-content:center;
+}
+.items {
+    font-family: Avenir-light;
+    background-color:#BBB;
+    border-radius:10px;
+    margin:1%;
+    width:20%;
+    height:80%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+h1 {
+    padding:0;
+    margin:0;
+    font-size:1.5vw;
+}
+.delete {
+    width:10%;
+    height:80%;
+    margin:1%;
+    background-color:#BBB;
+    border-radius:10px;
+    text-align: center;
+}
+.delete h1 {
+    line-height: 45px;
+      color: transparent;
+  text-shadow: 0 0 0 #333;
+  transition:0.3s;
+}
+.delete h1:hover {
+      color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+#map {
+  width:70%;
+  height: 500px;
+  border-radius:40px;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #description {
+    font-family: Avenir;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  #infowindow-content .title {
+    font-weight: bold;
+  }
+
+  #infowindow-content {
+    display: none;
+  }
+
+  #map #infowindow-content {
+    display: inline;
+  }
+
+  .pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 0px 30px 0 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Avenir;
+  }
+
+  #pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+    border-top-right-radius: 30px;
+  }
+  #pac-input {
+    background-color: #fff;
+    font-family: Avenir;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    margin-top:10px;
+    border-radius:5px;
+    border:none;
+    border-bottom: 1px solid black;
+    outline:none;
+    padding: 0 11px 5px 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+  }
+
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+
+  #title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-top-right-radius:30px;
+  }

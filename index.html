@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Harsh App </title>
+	<!--AIzaSyD7VLoj9E3vBiFFtxTZ4QqAHYAxKkzUbuM-->
+    <!--  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7VLoj9E3vBiFFtxTZ4QqAHYAxKkzUbuM&libraries=places"></script>-->
+	
+	<!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+	<!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.js"></script>        
+    <!-- CUSTOM -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+	
+<body >
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h1>Mapp</h1>
+                <p> FIND YOUR PLACES. QUICK.</p>
+                <img>   
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!--search card-->
+        <div class="pac-card" id="pac-card">
+            <div id="title"> Search for a Location</div>
+            <div id="pac-container">
+                <input id="pac-input" type="text" placeholder="Enter a location">
+                <button disabled="true" class="button" id="addButton" type="button"> + </button>
+            </div>
+        </div>
+        
+        <!--map-->
+        <div id="map" class="col-md-offset-2 col-md-8"></div>
+        
+        <!--info text on map-->
+        <div id="infowindow-content">
+            <img src="" width="16" height="16" id="place-icon">
+            <span id="place-name"  class="title"></span><br>
+            <span id="place-address"></span>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-offset-2">
+            <!--<input type="text" id="searchbox" class="input col-md-offset-9" onFocus="initSearch()" placeHolder="Enter a Location">
+            <button class="button" type="button"> &#128270; </button>-->
+            <button class="button" type="button" style="margin: 10px" id="del">Delete</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2 table-responsive">
+            <table class="cards table-bordered table" id="cards" data-toggle="table" data-unique-id="key">
+                <thead>
+                    <tr>
+                        <th data-field="country"> Country </th>
+                        <th data-field="state"> State </th>
+                        <th data-field="city"> City </th>
+                        <th data-field="street"> Street </th>
+                        <th data-field="number"> Number </th>
+                        <th data-field="checkbox" data-checkbox="true"></th>
+                       <!--<th><button class="button" id="del"> Delete </button> </th>-->
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div> 
+
+    <!--Scripts-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--CUSTOM-->
+    <script src="fb.js"></script>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7VLoj9E3vBiFFtxTZ4QqAHYAxKkzUbuM&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>
